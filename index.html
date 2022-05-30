@@ -4,18 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Internal CSS -->
+    <link rel="stylesheet" href="style.css">
      <!-- JavaScript -->
-     <script defer src="notes.js"></script>
+     <script defer src="main.js"></script>
     <title>Awesome Books</title>
 </head>
 <body>
     <h1>Awesome Books</h1>
-    <section id = "books-section"></section>
+    <section id = "books-section">
+        <!-- Content Goes Here -->
+    </section>
     <section id ="add-book-section">
-        <form action="post" class="book-form">
+        <form class="book-form">
             <input type="text" name="title" class="add-title" placeholder="Title">
             <input type="text" name="author" class="add-author" placeholder="Author">
-            <button type="submit">Add</button>
+            <button type="button" id="add-book-button">Add</button>
         </form>
     </section>
 </body>
