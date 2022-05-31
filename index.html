@@ -1,31 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Internal CSS -->
     <link rel="stylesheet" href="./styles/style.css">
-     <!-- JavaScript -->
-     <script defer src="main.js"></script>
+    <!-- JavaScript -->
+    <script defer src="main.js"></script>
     <title>Awesome Books</title>
 </head>
+
 <body>
     <h1>Awesome Books</h1>
-    <section id = "books-section">
+    <section id="books-section">
         <!-- Content Goes Here -->
+     <!-- <div class="book-container"> -->
         <ul class="book-container">
-            <li>"Title" by Author <button type="button" class="remove">Remove</button></li>
-            <li>"Title" by Author <button type="button" class="remove">Remove</button></li>
-            <li>"Title" by Author <button type="button" class="remove">Remove</button></li>
+            <li>"Book Title" by Author <button type="button" class="remove">Remove</button></li>
         </ul>
+     <!-- </div> -->
     </section>
-    <section id ="add-book-section">
+    <section id="add-book-section">
+        <h2>Add a New Book</h2>
         <form class="book-form">
-            <input type="text" name="title" class="add-title" placeholder="Title" required>
-            <input type="text" name="author" class="add-author" placeholder="Author" required>
-            <button type="button" id="add-book-button">Add</button>
+            <input type="text" name="title" class="title" placeholder="Title">
+            <input type="text" name="author" class="author" placeholder="Author">
+            <button type="submit" id="add-book-button">Add</button>
         </form>
     </section>
 </body>
+
 </html>
