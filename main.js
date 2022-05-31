@@ -6,18 +6,15 @@ const addAuthor = document.querySelector('.add-author');
 const bookArrays = JSON.parse(localStorage.getItem('session')) || [];
 
 function retrieveFormData() {
-    
   bookArrays.forEach((bookArray, i) => {
-      bookSection.innerHTML += `<h4>${bookArray.title}</h4> 
+    bookSection.innerHTML += `<h4>${bookArray.title}</h4> 
       <h4>${bookArray.autor}</h4>
       <button class = 'remove' onclick="removeBook(${i})">Remove</button>
       <hr>`;
-  })
-};
-
+  });
+}
 
 function addBook() {
-
   if (addTitle.value !== '' && addAuthor.value !== '') {
     const bookObjects = {
       title: addTitle.value,
@@ -26,10 +23,7 @@ function addBook() {
     bookArrays.push(bookObjects);
     retrieveFormData();
     localStorage.setItem('session', JSON.stringify(bookArrays));
-    window.location.reload()
-    
-  } else {
-    alert('no input detected');
+    window.location.reload();
   }
 }
 
@@ -40,14 +34,11 @@ window.onload = () => {
   retrieveFormData();
 };
 
-
 addBookButton.addEventListener('click', addBook);
 
 function removeBook(index) {
   bookArrays.splice(index, 1);
   localStorage.setItem('session', JSON.stringify(bookArrays));
   retrieveFormData();
-  window.location.reload()
+  window.location.reload();
 }
-
-
