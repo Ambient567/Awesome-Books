@@ -38,7 +38,7 @@ body {
 }
 
 .logo-right {
-  color: blue;
+  color: #446df6;
   font-weight: 700;
   font-size: large;
   transition: font-size 3s;
@@ -57,15 +57,16 @@ body {
 
 .nav-list {
   text-decoration: none;
+  color: inherit;
 }
 
 .nav-list:hover {
   font-size: 102%;
-  color: #a4b1aa;
+  color: #446df6;
 }
 
-.nav-list:active {
-  color: blue;
+.blue {
+  color: #446df6;
 }
 
 button {
