@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+/* stylelint-disable csstree/validator */
+*,
+*::after,
+*::before {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  padding: 32px;
+  color: #121614;
+}
+
+button {
+  -webkit-box-shadow: 3px 5px 8px 2px rgba(18, 22, 20, 0.2);
+  box-shadow: 3px 5px 8px 2px rgba(18, 22, 20, 0.2);
+  -webkit-transition: all 250ms ease-out;
+  transition: all 250ms ease-out;
+  cursor: pointer;
+  padding: 10px;
+  width: 120px;
+  font-weight: 700;
+  border: 2px solid #121614;
+}
+
+button:hover {
+  outline: none;
+  border: 2px solid #a4b1aa;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background: #a4b1aa;
+  color: #f2f2f2;
+}
+
+.book-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border: 3px solid #121614;
+}
+
+.book-container :nth-child(odd) {
+  background: #ddd;
+}
+
+.book-container li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 690px;
+  padding: 5px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+#add-book-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-top: 50px;
+  gap: 20px;
+}
+
+#add-book-section form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+}
+
+#add-book-section form input {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 80%;
+  flex: 1 1 80%;
+  border: 2px solid #a4b1aa;
+  padding: 10px;
+  color: #121614;
+  width: 430px;
+  font-family: inherit;
+  font-size: inherit;
+}

@@ -1,14 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <!-- JavaScript -->
-     <script defer src="notes.js"></script>
+    <!-- Internal CSS -->
+    <link rel="stylesheet" href="./styles/style.css">
+    <!-- JavaScript -->
+    <script defer src="main.js"></script>
     <title>Awesome Books</title>
 </head>
+
 <body>
     <h1>Awesome Books</h1>
+    <section id="books-section">
+        <ul class="book-container">
+            <!-- content Goes here -->
+            <li class="book">"Book Title" by Sample Author <button type="button" class="remove">Remove</button></li>
+        </ul>
+     
+    </section>
+    <section id="add-book-section">
+        <h2>Add a New Book</h2>
+        <form class="book-form">
+            <input type="text" name="title" class="title" placeholder="Title">
+            <input type="text" name="author" class="author" placeholder="Author">
+            <button type="submit" id="add-book-button">Add</button>
+        </form>
+    </section>
 </body>
+
 </html>
