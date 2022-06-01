@@ -64,4 +64,8 @@ Give a ⭐️ if you like this project!
 
 ## 📝 License
 
+<<<<<<< HEAD
 This project is [MIT](./LICENSE) licensed.
+=======
+This project is [MIT](./LICENSE) licensed.
+>>>>>>> 9e432f9414ea699959a2759124bbacdb1bf9f49f

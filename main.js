@@ -35,7 +35,8 @@ window.onload = () => {
   retrieveFormData();
 };
 
-addBookButton.addEventListener('click', addBook);
+// Event for Displaying Books in UI
+document.addEventListener('DOMContentLoaded', displayBooks);
 
 function removeBook(index) {
   bookArrays.splice(index, 1);
