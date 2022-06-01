@@ -85,3 +85,38 @@ form.addEventListener('submit', (e) => {
     titleInput.focus();
   }
 });
+
+const list = document.querySelector('.list');
+const contact = document.querySelector('.contact');
+const add = document.querySelector('.add');
+
+const bookSection = document.querySelector('#book-section');
+const contactSection = document.querySelector('#contact-info');
+const showSection = document.querySelector('#show-section');
+
+list.addEventListener('click', () => {
+  bookSection.classList.add('active');
+  contactSection.classList.add('active');
+  showSection.classList.remove('active');
+  list.classList.add('blue');
+  add.classList.remove('blue');
+  contact.classList.remove('blue');
+});
+
+add.addEventListener('click', () => {
+  contactSection.classList.add('active');
+  showSection.classList.add('active');
+  bookSection.classList.remove('active');
+  add.classList.add('blue');
+  contact.classList.remove('blue');
+  list.classList.remove('blue');
+});
+
+contact.addEventListener('click', () => {
+  bookSection.classList.add('active');
+  showSection.classList.add('active');
+  contactSection.classList.remove('active');
+  contact.classList.add('blue');
+  list.classList.remove('blue');
+  add.classList.remove('blue');
+});
