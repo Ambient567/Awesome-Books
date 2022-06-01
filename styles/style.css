@@ -192,6 +192,7 @@ button:hover {
 .footer {
   display: flex;
   border: solid 2px black;
+  justify-content: center;
   padding: 10px 10px;
   position: absolute;
   bottom: 0;
