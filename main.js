@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 const bookSection = document.querySelector('#books-section');
 const addBookButton = document.querySelector('#add-book-button');
 const addTitle = document.querySelector('.add-title');
@@ -29,7 +30,7 @@ function addBook() {
 
 window.onload = () => {
   if (localStorage.getItem('session')) {
-    session = JSON.parse(localStorage.getItem('session'));
+    const session = JSON.parse(localStorage.getItem('session'));
   }
   retrieveFormData();
 };
