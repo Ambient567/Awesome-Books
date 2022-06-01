@@ -45,7 +45,7 @@ body {
 }
 
 .logo:hover {
-   opacity: 0.5;
+  opacity: 0.5;
 }
 
 .nav-link {
@@ -193,8 +193,8 @@ button:hover {
   display: flex;
   border: solid 2px black;
   padding: 10px 10px;
-  position : absolute;
-  bottom : 0;
+  position: absolute;
+  bottom: 0;
   width: 95%;
   margin-bottom: 20px;
 }
