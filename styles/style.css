@@ -20,6 +20,54 @@ body {
   color: #121614;
 }
 
+.nav {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  border: solid 2px #121614;
+  padding: 20px 20px;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.logo-left {
+  color: red;
+  font-weight: 700;
+  font-size: large;
+  transition: font-size 3s;
+}
+
+.logo-right {
+  color: blue;
+  font-weight: 700;
+  font-size: large;
+  transition: font-size 3s;
+}
+
+.logo:hover {
+   opacity: 0.5;
+}
+
+.nav-link {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  gap: 1rem;
+}
+
+.nav-list {
+  text-decoration: none;
+}
+
+.nav-list:hover {
+  font-size: 102%;
+  color: #a4b1aa;
+}
+
+.nav-list:active {
+  color: blue;
+}
+
 button {
   -webkit-box-shadow: 3px 5px 8px 2px rgba(18, 22, 20, 0.2);
   box-shadow: 3px 5px 8px 2px rgba(18, 22, 20, 0.2);
@@ -110,4 +158,47 @@ button:hover {
   width: 430px;
   font-family: inherit;
   font-size: inherit;
+}
+
+.contact-info {
+  width: 100%;
+}
+
+.contact-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-header {
+  font-weight: 700;
+  font-size: 305%;
+  margin-bottom: 60px;
+}
+
+.contact-par {
+  font-size: 150%;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.detail-li {
+  font-size: 150%;
+  font-weight: 300;
+  text-decoration: underline;
+  margin-bottom: 10px;
+}
+
+.footer {
+  display: flex;
+  border: solid 2px black;
+  padding: 10px 10px;
+  position : absolute;
+  bottom : 0;
+  width: 95%;
+  margin-bottom: 20px;
+}
+
+.active {
+  display: none;
 }

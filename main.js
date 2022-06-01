@@ -85,3 +85,29 @@ form.addEventListener('submit', (e) => {
     titleInput.focus();
   }
 });
+
+const list = document.querySelector('.list');
+const contact = document.querySelector('.contact');
+const add = document.querySelector('.add');
+
+const bookSection = document.querySelector('#book-section');
+const contactSection = document.querySelector('#contact-info');
+const showSection = document.querySelector('#show-section');
+
+list.addEventListener('click', () => {
+  bookSection.classList.add('active');
+  contactSection.classList.add('active');
+  showSection.classList.remove('active');
+});
+
+add.addEventListener('click', () => {
+  contactSection.classList.add('active');
+  showSection.classList.add('active');
+  bookSection.classList.remove('active');
+});
+
+contact.addEventListener('click', () => {
+  bookSection.classList.add('active');
+  showSection.classList.add('active');
+  contactSection.classList.remove('active');
+});
